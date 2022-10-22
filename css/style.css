@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1,h2,h3,h4,h5,p{
     margin: 0;
 }
@@ -107,12 +111,17 @@ body{
     display: inline-block;
     background-color: #131313;
     color:#fff;
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.1em;
     text-transform: uppercase;
+    transition: all .3s
+}
+
+.bike__link:hover{
+    background-color: #ff4040;
 }
 
 .bike-slider .slick-dots{
@@ -259,4 +268,205 @@ body{
 }
 .characteristics__descr{
     flex-basis: 285px;
+}
+
+.slider{
+    margin-bottom: 50px;
+}
+
+.slider__item{
+    padding-left: 50px;
+}
+
+.slider__item .slick-dots{
+    top: 0;
+    left: 0;
+}
+
+.price{
+    margin-bottom: 100px;
+}
+
+.price__inner{
+    position: relative;
+}
+
+.form{
+    max-width: 420px;
+}
+
+.form__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.form__text{
+    line-height: 120%;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.form__input-name,
+.form__input-phone{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #131313;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder,
+.form__input-text{
+    line-height: 120%;
+    color: #6F6F6F;
+    text-transform: lowercase;
+    opacity: 0.5;
+}
+
+.form__input-text{
+    margin-bottom: 10px;
+}
+
+.form__label + .form__label{
+    margin-left: 23px;
+    margin-bottom: 50px;
+}
+
+.form__label-box{
+    display: flex;
+}
+
+.form__input-radio{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__input-radio:checked +.form__bike{
+    display: block;
+}
+
+.form__bike{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form__bike-price{
+    font-size: 32px;
+    line-height: 39px;
+    color: #131313;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 220px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF4040;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.form__bike-price::after{
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    border: 1px solid #FF4040;
+    border-radius: 50%;
+    top: 10px;
+    left: 0;
+}
+
+.form__radio-style{
+    width: 80px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.form__radio-style--gray{
+    background: #6F6F6F;
+}
+
+.form__radio-style--white{
+    background: #fff;
+    border: 1px solid #6F6F6F;
+}
+
+.form__radio-style--red{
+    background: #FF4040;;
+}
+
+.form__btn{
+    width: 420px;
+    height: 80px;
+    background: #131313;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    padding: 28px 71px 28px 81px;
+    transition: all .3s;
+}
+
+.form__btn:hover{
+    background-color: #ff4040;
+}
+
+.footer{
+    background-color: #131313;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer__link{
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+.footer__social-link + .footer__social-link{
+    margin-left: 26px;
+}
+
+.footer__contacts{
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+}
+
+.footer__contacts-link{
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts-link + .footer__contacts-link{
+    margin-top: 10px;
+}
+
+.footer__contacts-img{
+    margin-right: 10px;
 }
