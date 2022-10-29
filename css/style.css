@@ -191,7 +191,7 @@ body{
     display: flex;
 }
 
-.info-img{
+.info__img{
     object-fit: cover;
     margin-right: 60px;
     flex-basis: 570px;
@@ -490,6 +490,21 @@ body{
     .bike__column-slider{
         max-width: 100%;
         margin-left: 0;
+    }
+    .info{
+        padding-top: 20px;
+    }
+    .info__img{
+        display: none;
+    }
+    .info__list{
+        flex-basis: 100%;
+    }
+    .info__item + .info__item{
+        padding-top: 20px;
+    }
+    .info__item-text{
+        max-width: 100%;
     }
 }
 
