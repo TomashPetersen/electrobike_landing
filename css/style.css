@@ -506,11 +506,35 @@ body{
     .info__item-text{
         max-width: 100%;
     }
+    .characteristics{
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+    .slider__img{
+        object-fit: cover;
+        height: 400px;
+    }
 }
 
 @media (max-width: 991px){
     .menu{
         margin-right: 0;
+    }
+    .characteristics__inner{
+        flex-wrap: wrap;
+    }
+    .characteristics__img{
+        order: -1;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .characteristics__items{
+        flex-basis: 100%;
+        margin: 0;
+    }
+    .characteristics__name, .characteristics__descr{
+        flex-basis: 50%;
+        padding-left: 20px;
     }
 }
 
@@ -540,6 +564,9 @@ body{
     }
     .bike__list-text{
         margin: 10px 0 0;
+    }
+    .slider__img{
+        height: 300px;
     }
 }
 
@@ -571,6 +598,9 @@ body{
         max-width: 310px;
         margin: 0 auto 20px;
     }
+    .slider__item{
+        padding-left: 10px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -584,6 +614,9 @@ body{
         letter-spacing: 0.5em;
         max-width: 215px;
         padding: 15px 20px;
+    }
+    .slider{
+        display: none;
     }
 }
 
